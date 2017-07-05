@@ -13,3 +13,15 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+//= require bootstrap-sprockets
+
+$(document).on('turbolinks:load', function() {
+
+  $("#copy-button").click(function(){
+    $("textarea").select();
+    document.execCommand('copy');
+    $('#copied-success').html("copied");
+  });
+
+});

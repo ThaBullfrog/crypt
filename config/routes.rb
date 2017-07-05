@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'application#hello'
+  root 'crypt#home'
+  post '/', to: 'crypt#process_text'
 
 end
