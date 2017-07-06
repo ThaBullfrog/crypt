@@ -4,7 +4,7 @@
   <% end %>
 
   <%= f.label :text %>&nbsp;<span id="copied-success" style="color: green; text-align: center"></span>
-  <%= f.text_area :text, class: "form-control", value: params[:text] %><br>
+  <%= f.text_area :text, class: "form-control" %><br>
 
   <%= f.submit "Encrypt", class: "btn btn-primary form-control" %><br><br>
 
@@ -12,3 +12,5 @@
 <% end %>
 
 <button id="copy-button" class="btn btn-primary form-control">Copy to Clipboard</button><br><br>
+
+<button id="clear-button" class="btn btn-primary form-control">Clear</button>

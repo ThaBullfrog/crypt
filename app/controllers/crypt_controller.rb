@@ -8,12 +8,11 @@ class CryptController < ApplicationController
     @crypt = Crypt.new(crypt_params)
     if(@crypt.valid?)
       if(params[:decrypt])
-        flash[:success] = "Decrypted"
-        redirect_to root_path(text: decrypt(@crypt.text))
+        @crypt.text = decrypt(@crypt.text)
       else
-        flash[:success] = "Encrypted"
-        redirect_to root_path(text: encrypt(@crypt.text))
+        @crypt.text = encrypt(@crypt.text)
       end
+      render 'home'
     else
       render 'home'
     end

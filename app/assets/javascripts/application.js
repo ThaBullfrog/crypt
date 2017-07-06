@@ -41,4 +41,8 @@ $(document).on('turbolinks:load', function() {
     $('#copied-success').html("copied");
   });
 
+  $("#clear-button").click(function(){
+    $('textarea').val('');
+  });
+
 });

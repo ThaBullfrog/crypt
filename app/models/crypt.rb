@@ -4,6 +4,4 @@ class Crypt
 
   attr_accessor :text
 
-  validates :text, presence: true
-
 end
