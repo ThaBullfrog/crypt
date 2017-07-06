@@ -3,8 +3,9 @@
     <%= show_errors(@crypt.errors.full_messages) %>
   <% end %>
 
-  <%= f.label :text %>&nbsp;<span id="copied-success" style="color: green; text-align: center"></span>
-  <%= f.text_area :text, class: "form-control" %><br>
+  <%= f.label :text %>
+  <%= f.text_area :text, class: "form-control" %>
+  <div id="copied-success" style="color: green">&nbsp;</div><br>
 
   <%= f.submit "Encrypt", class: "btn btn-primary form-control" %><br><br>
 

@@ -38,7 +38,9 @@ $(document).on('turbolinks:load', function() {
       $input.select();
     }
     document.execCommand('copy');
-    $('#copied-success').html("copied");
+    if($input.val() != '') {
+      $('#copied-success').html("copied");
+    }
   });
 
   $("#clear-button").click(function(){
