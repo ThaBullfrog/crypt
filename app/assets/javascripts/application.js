@@ -39,7 +39,7 @@ $(document).on('turbolinks:load', function() {
     }
     document.execCommand('copy');
     if($input.val() != '') {
-      $('#copied-success').html("copied");
+      $('#copied-success').html("Copied");
     }
   });
 
