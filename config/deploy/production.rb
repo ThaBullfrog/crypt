@@ -57,3 +57,7 @@ server "bullfrogwebsites.com", user: "deploy", roles: %w{app db web}
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+set :rbenv_type, :user                                                          
+set :rbenv_ruby, '2.4.1'
+
